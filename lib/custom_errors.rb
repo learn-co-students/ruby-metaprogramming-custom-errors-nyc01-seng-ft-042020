@@ -4,7 +4,8 @@ class Person
   def initialize(name)
     @name = name
   end
-
+  class PartnerError < StandardError
+  end
   def get_married(person)
     self.partner = person
     person.partner = self
